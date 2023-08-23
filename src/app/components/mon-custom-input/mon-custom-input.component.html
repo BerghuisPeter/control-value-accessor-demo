@@ -1,0 +1,12 @@
+<input type="text"
+       [attr.disabled]="disabled || null"
+       [attr.aria-label]="ariaLabel || null"
+       (blur)="onBlur()"
+       (input)="onInputChange()"
+       [(ngModel)]="inputValue"
+/>
+<button type="button"
+        (click)="clearInput()"
+        [disabled]="disabled">
+  Vider
+</button>

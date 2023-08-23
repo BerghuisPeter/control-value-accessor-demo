@@ -1,0 +1,33 @@
+:host {
+  display: inline-flex;
+  border: #1976d2 solid 1px;
+  border-radius: 3px;
+
+  & input {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 5px;
+    flex-grow: 1;
+
+    &:hover {
+      background: #E2EDFCFF;
+    }
+
+    &:disabled {
+      background: #a6a5a5;
+    }
+  }
+
+  & button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-left: #1976d2 solid 1px;
+
+    &:hover {
+      background: #19688c;
+      color: white;
+    }
+  }
+}
